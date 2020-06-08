@@ -5,7 +5,7 @@ function Navbar() {
     const location = useLocation();
     return (
     
-        <nav class="navbar navbar-expand-md fixed-top ">
+        <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,7 +17,7 @@ function Navbar() {
             </Link>
              </li>
             <li class="nav-item">
-            <Link to="/Project" className={location.pathname === "/Project" ? "nav-link active" : "nav-link"}>
+            <Link to="/Projects" className={location.pathname === "/Projects" ? "nav-link active" : "nav-link"}>
               Projects
             </Link>
             </li>
